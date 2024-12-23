@@ -24,3 +24,15 @@ sudo apt install esptool
 ```
 esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_flash --flash_mode dio --flash_freq 20m --flash_size detect 0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 firmware.bin
 ```
+
+<br><br>
+
+- Windows
+
+  - Download the Flash download tools
+  - import the firmware to the flash download tool
+  - bootloader `0x1000`
+  - partition  `0x8000`
+  - firmware   `0x10000`
+
+<img src="https://github.com/xiv3r/ESP32-wifi-hacker/blob/main/esp32_win.png">
