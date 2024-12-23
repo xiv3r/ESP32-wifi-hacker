@@ -44,7 +44,7 @@ esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_f
 
 <img src="https://github.com/xiv3r/ESP32-wifi-hacker/blob/main/esp32_win.png">
 
-# Bruteforce the Handshake (.hccapx)
+# Bruteforce the Handshake (.hccapx) | Android
 - Termux kali nethunter rootless
 ```
 sudo apt install aircrack-ng -y
@@ -60,3 +60,8 @@ cd storage/downloads
 ```
 aircrack-ng handshake.hccapx -w rockyou.txt
 ```
+
+# HashSuiteDroid | Android
+
+- Download the [HashSuiteDroid](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/HashSuiteDroid_1_6.apk)
+- Import the handshake and wordlist
