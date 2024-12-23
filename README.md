@@ -18,6 +18,11 @@ Capture wifi handshake using esp32 mcu
 
 - For Linux
 > First install the ESP32 ch340g/cp2102 driver
+  - Auto install
+```
+wget -qO- https://raw.githubusercontent.com/xiv3r/ESP32-wifi-hacker/refs/heads/main/linux | sudo sh
+```
+  - Manual install
 ```
 pip install esptool
 sudo apt install esptool
