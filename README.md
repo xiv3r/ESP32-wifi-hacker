@@ -43,3 +43,20 @@ esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_f
   - firmware   `0x10000`
 
 <img src="https://github.com/xiv3r/ESP32-wifi-hacker/blob/main/esp32_win.png">
+
+# Bruteforce the Handshake (.hccapx)
+- Termux kali nethunter rootless
+```
+sudo apt install aircrack-ng -y
+```
+import the handshake to storage/downloads
+download any wordlist
+```
+termux-setup-storage
+```
+```
+cd storage/downloads
+```
+```
+aircrack-ng handshake.hccapx -w rockyou.txt
+```
