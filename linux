@@ -1,6 +1,12 @@
 #!/bin/sh
 
 # Auto install script for Linux
+sudo apt update
+###
+sudo apt install esptool
+###
+pip install esptool
+###
 git clone https://github.com/xiv3r/ESP32-wifi-hacker.git
 ###
 cd ESP32-wifi-hacker/bin
