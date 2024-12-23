@@ -17,7 +17,7 @@ Capture wifi handshake using esp32 mcu
 # Flash the Firmware
 
 - For Linux
-
+> First install the ESP32 ch340g/cp2102 driver
 ```
 pip install esptool
 sudo apt install esptool
@@ -30,7 +30,8 @@ esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_f
 
 - For Windows
 
-  - Download the Flash download tools
+  - First install the ESP32 ch340g/cp2102 driver
+  - Download the [Flash download tools](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/flash_download_tool.zip)
   - import the firmware to the flash download tool
   - bootloader `0x1000`
   - partition  `0x8000`
