@@ -6,6 +6,7 @@ Capture wifi handshake using esp32 mcu
 
 
 # Installation
+> Download the firmware
 
 | Name            | Offset |
 |-----------------|--------|
@@ -13,9 +14,9 @@ Capture wifi handshake using esp32 mcu
 | [partition table](https://raw.githubusercontent.com/xiv3r/ESP32-wifi-hacker/refs/heads/main/bin/partition-table.bin) | 0x8000 |
 | [firmware](https://raw.githubusercontent.com/xiv3r/ESP32-wifi-hacker/refs/heads/main/bin/firmware.bin)        | 0x10000|
 
-# Flashing the Firmware
+# Flash the Firmware
 
-- Linux
+- For Linux
 
 ```
 pip install esptool
@@ -27,7 +28,7 @@ esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_f
 
 <br><br>
 
-- Windows
+- For Windows
 
   - Download the Flash download tools
   - import the firmware to the flash download tool
