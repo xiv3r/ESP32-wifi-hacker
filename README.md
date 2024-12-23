@@ -49,8 +49,8 @@ esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_f
 ```
 sudo apt install aircrack-ng -y
 ```
-import the handshake to storage/downloads
-download any wordlist
+- > import the handshake to storage/downloads
+- > download any wordlist
 ```
 termux-setup-storage
 ```
