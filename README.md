@@ -14,3 +14,13 @@ Capture wifi handshake using esp32 mcu
 | [firmware](https://raw.githubusercontent.com/xiv3r/ESP32-wifi-hacker/refs/heads/main/bin/firmware.bin)        | 0x10000|
 
 # Flashing the Firmware
+
+- Linux
+
+```
+pip install esptool
+sudo apt install esptool
+```
+```
+esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_flash --flash_mode dio --flash_freq 20m --flash_size detect 0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 firmware.bin
+```
