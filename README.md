@@ -65,3 +65,5 @@ aircrack-ng handshake.hccapx -w rockyou.txt
 
 - Download the [HashSuiteDroid](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/HashSuiteDroid_1_6.apk)
 - Import the handshake and wordlist
+
+[Video](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/HashSuiteDroid.mp4)
