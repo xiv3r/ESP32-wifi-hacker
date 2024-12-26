@@ -16,7 +16,7 @@ Capture wifi handshake using esp32 mcu
 
 # Flash the Firmware
 
-- For Linux
+## For Linux
 > First install the ESP32 ch340g/cp2102 driver
   - Auto install
 ```
@@ -28,24 +28,28 @@ pip install esptool
 sudo apt install esptool
 ```
 ```
-esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_flash --flash_mode dio --flash_freq 20m --flash_size detect 0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 firmware.bin
+git clone https://github.com/xiv3r/ESP32-wifi-hacker.git
+cd ESP32-wifi-hacker
+```
+```
+esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_flash --flash_mode dio --flash_freq 20m --flash_size detect 0x1000 bin/bootloader.bin 0x8000 bin/partition-table.bin 0x10000 bin/firmware.bin
 ```
 
 <br><br>
 
-- For Windows
+## For Windows
 
-  - First install the ESP32 ch340g/cp2102 driver
-  - Download the [Flash download tools](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/flash_download_tool.zip)
-  - import the firmware to the flash download tool
-  - bootloader `0x1000`
-  - partition  `0x8000`
-  - firmware   `0x10000`
+- First install the ESP32 ch340g/cp2102 driver
+- Download the [Flash download tools](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/flash_download_tool.zip)
+- import the firmware to the flash download tool
+- bootloader `0x1000`
+- partition  `0x8000`
+- firmware   `0x10000`
 
 <img src="https://github.com/xiv3r/ESP32-wifi-hacker/blob/main/esp32_win.png">
 
-# Bruteforce the Handshake (.hccapx) | Android
-- Termux kali nethunter rootless
+## Bruteforce the Handshake (.hccapx) | Android
+- Termux for rootless kali nethunter
 ```
 sudo apt install aircrack-ng -y
 ```
@@ -61,10 +65,10 @@ cd storage/downloads
 aircrack-ng handshake.hccapx -w rockyou.txt
 ```
 
-# HashSuiteDroid | Android
+## Bruteforce using HashSuiteDroid | Android
 
 - Download the [HashSuiteDroid](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/HashSuiteDroid_1_6.apk)
-- Import the handshake and wordlist
+- Import the handshake and the wordlist and follow the video tutorial
 - [HashSuiteDroid Video](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/HashSuiteDroid.mp4)
 
 
