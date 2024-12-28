@@ -11,5 +11,8 @@ Auto install
 > must run as root
 ```
 sudo -i
-wget https://github.com/xiv3r/ESP32-wifi-hacker/raw/refs/heads/main/drivers/CH341SER_LINUX.ZIP && unzip CH341SER_LINUX.ZIP && cd CH341SER_LINUX/driver && make && sudo make load && sudo make install
+wget https://github.com/xiv3r/ESP32-wifi-hacker/raw/refs/heads/main/drivers/CH341SER_LINUX.ZIP && unzip CH341SER_LINUX.ZIP && cd CH341SER_LINUX/driver
+```
+```
+make && sudo make load && sudo make install
 ```
