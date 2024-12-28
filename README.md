@@ -17,7 +17,7 @@ Capture wifi handshake using esp32 mcu
 # Flash the Firmware
 
 ## For Linux
-> First install the ESP32 ch340g/cp2102 driver
+> First install the ESP32 [ch340g/cp2102 driver](https://github.com/xiv3r/ESP32-wifi-hacker/tree/main/drivers)
   - Auto install
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/ESP32-wifi-hacker/refs/heads/main/linux | sudo sh
@@ -38,28 +38,22 @@ esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_f
 <br><br>
 
 ## For Windows
-
-- First install the ESP32 ch340g/cp2102 driver
+> First install the ESP32 [ch340g/cp2102 driver](https://github.com/xiv3r/ESP32-wifi-hacker/tree/main/drivers)
 - Download the [Flash download tools](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/flash_download_tool.zip)
 - import the firmware to the flash download tool
-- bootloader `0x1000`
-- partition  `0x8000`
-- firmware   `0x10000`
+> Offsets
+> - bootloader `0x1000`
+> - partition  `0x8000`
+> - firmware   `0x10000`
 
 <img src="https://github.com/xiv3r/ESP32-wifi-hacker/blob/main/esp32_win.png">
 
-## Bruteforce using Linux/Termux
+## Bruteforce using Linux | Termux Rootless
 ```
 sudo apt install aircrack-ng -y
 ```
-- > import the handshake to storage/downloads
+- > import the handshake into home directory
 - > download any wordlist from https://weakpass.com and extract
-```
-termux-setup-storage
-```
-```
-cd storage/downloads
-```
 ```
 aircrack-ng handshake.hccapx -w rockyou.txt
 ```
@@ -67,7 +61,9 @@ aircrack-ng handshake.hccapx -w rockyou.txt
 ## Bruteforce using HashSuiteDroid | Android
 
 - Download the [HashSuiteDroid](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/HashSuiteDroid_1_6.apk)
+- 
 - Import the handshake and the wordlist and follow the video tutorial
+
 ## [HashSuiteDroid Video Demo](https://github.com/xiv3r/ESP32-wifi-hacker/blob/main/HashSuiteDroid.mp4)
 
 
