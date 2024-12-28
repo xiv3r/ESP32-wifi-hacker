@@ -54,7 +54,7 @@ esptool -b 115200 --before default_reset --after hard_reset --chip esp32 write_f
 sudo apt install aircrack-ng -y
 ```
 - > import the handshake to storage/downloads
-- > download any wordlist
+- > download any wordlist from https://weakpass.com and extract
 ```
 termux-setup-storage
 ```
@@ -69,7 +69,7 @@ aircrack-ng handshake.hccapx -w rockyou.txt
 
 - Download the [HashSuiteDroid](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/HashSuiteDroid_1_6.apk)
 - Import the handshake and the wordlist and follow the video tutorial
-- [HashSuiteDroid Video](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/HashSuiteDroid.mp4)
+- [HashSuiteDroid Video Demo](https://github.com/xiv3r/ESP32-wifi-hacker/blob/main/HashSuiteDroid.mp4)
 
 
 
