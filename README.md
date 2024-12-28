@@ -61,7 +61,7 @@ aircrack-ng handshake.hccapx -w rockyou.txt
 ## Bruteforce using HashSuiteDroid | Android
 
 - Download the [HashSuiteDroid](https://github.com/xiv3r/ESP32-wifi-hacker/releases/download/Flasher/HashSuiteDroid_1_6.apk)
-- 
+
 - Import the handshake and the wordlist and follow the video tutorial
 
 ## [HashSuiteDroid Video Demo](https://github.com/xiv3r/ESP32-wifi-hacker/blob/main/HashSuiteDroid.mp4)
