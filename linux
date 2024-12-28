@@ -3,7 +3,7 @@
 # Auto install script for Linux
 sudo apt update
 ###
-sudo apt install esptool
+sudo apt install esptool -y
 ###
 pip install esptool
 ###
