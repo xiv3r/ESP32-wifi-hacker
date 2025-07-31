@@ -66,7 +66,3 @@ aircrack-ng handshake.hccapx -w rockyou.txt
 
 ## [HashSuiteDroid Video Demo](https://github.com/xiv3r/ESP32-wifi-hacker/blob/main/HashSuiteDroid.mp4)
 
-
-
-Credits: [johndeweyzxc](https://github.com/johndeweyzxc)
-
